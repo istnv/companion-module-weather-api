@@ -18,12 +18,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/istnv/companion-module-weatherapi-rest.git"
+		"url": "git+https://github.com/bitfocus/companion-module-weatherapi-rest.git"
 	},
 	"author": "John A Knight, Jr",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/istnv/companion-module-weatherapi-rest/issues"
+		"url": "https://github.com/bitfocus/companion-module-weatherapi-rest/issues"
 	},
-	"homepage": "https://github.com/istnv/companion-module-weatherapi-rest#readme"
+	"homepage": "https://github.com/bitfocus/companion-module-weatherapi-rest#readme"
 }
