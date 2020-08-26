@@ -23,7 +23,7 @@ instance.prototype.VARIABLE_LIST = {
 	c_day: { description: 'Is it daytime?', section: 'current', data: 'is_day' },
 	c_text: { description: 'Condition description', section: 'condition', data: 'text' },
 	c_wind: { description: 'Wind speed', section: 'current', data: 'wind', unit: ['mph','kph'] },
-	c_winddeg: { description: 'Wind degrees', section: 'current', data: 'wind_deg' },
+	c_winddeg: { description: 'Wind degrees', section: 'current', data: 'wind_degree' },
 	c_winddir: { description: 'Wind direction', section: 'current', data: 'wind_dir' }
 
 };
