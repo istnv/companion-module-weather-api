@@ -1,0 +1,29 @@
+{
+	"name": "weatherapi-rest",
+	"legacy": [
+		"weather-api"
+	],
+	"version": "1.0.0",
+	"api_version": "1.0.0",
+	"keywords": [
+		"weather"
+	],
+	"shortname": "wapi",
+	"description": "Weather display using WeatherAPI.com",
+	"main": "index.js",
+	"manufacturer": "WeatherAPI.com",
+	"product": "Current Weather",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/istnv/companion-module-weatherapi-rest.git"
+	},
+	"author": "John A Knight, Jr",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/istnv/companion-module-weatherapi-rest/issues"
+	},
+	"homepage": "https://github.com/istnv/companion-module-weatherapi-rest#readme"
+}
