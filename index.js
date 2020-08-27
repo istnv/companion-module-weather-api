@@ -267,9 +267,11 @@ instance.prototype.refresh = function () {
 				self.log('error', data.error.message);
 				self.status(self.STATUS_ERROR, data.error.message);
 				self.hasError = true;
-			} else {
+			} else if (response.statusCode == 200) {
 				self.status(self.STATUS_OK);
 				self.update_variables(data);
+			} else {
+				self.status(self.STATUS_ERROR, data.message);
 			}
 		});
 	}
@@ -296,10 +298,12 @@ instance.prototype.update_variables = function(data) {
 			u = '';
 			if (v[i].unit) {
 				u = '_' + v[i].unit[self.config.units == 'i' ? 0 : 1];
-			}
-			dv = data.current[v[i].data + u];
-			if (['_f','_c'].includes(u)) {
-				dv += self.C_DEGREE;
+				dv = Math.floor(data.current[v[i].data + u] + .49);
+				if (['_f','_c'].includes(u)) {
+					dv += self.C_DEGREE;
+				}
+			} else {
+				dv = data.current[v[i].data];
 			}
 			break;
 		case 'condition':
